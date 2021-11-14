@@ -1,0 +1,26 @@
+{
+  "name": "playwright-test",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "playwright test",
+    "test:debug": "cross-env PWDEBUG=1 playwright test",
+    "record": "playwright codegen --channel chrome",
+    "extension": "node ./extension.js ",
+    "report": "npx playwright test --reporter=html",
+    "trace":"npx playwright show-trace trace.zip"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@playwright/test": "^1.16.3",
+    "@types/axios": "^0.14.0",
+    "cross-env": "^7.0.3",
+    "playwright": "^1.16.3"
+  },
+  "dependencies": {
+    "axios": "^0.24.0"
+  }
+}

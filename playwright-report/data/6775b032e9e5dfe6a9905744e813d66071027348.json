@@ -1,0 +1,113 @@
+{
+  "fileId": "6775b032e9e5dfe6a9905744e813d66071027348",
+  "fileName": "foo.test.js",
+  "tests": [
+    {
+      "testId": "6775b032e9e5dfe6a9905744e813d66071027348-721c6bfea0dbd65d57ea2d67be2e580ab77ae878",
+      "title": "my test",
+      "projectName": "",
+      "location": {
+        "file": "foo.test.js",
+        "line": 3,
+        "column": 1
+      },
+      "duration": 3241,
+      "outcome": "unexpected",
+      "path": [
+        "foo.test.js:3"
+      ],
+      "results": [
+        {
+          "duration": 3241,
+          "startTime": "2021-11-14T12:29:54.090Z",
+          "retry": 0,
+          "steps": [
+            {
+              "title": "Before Hooks",
+              "startTime": "2021-11-14T12:29:54.091Z",
+              "duration": 712,
+              "steps": [
+                {
+                  "title": "browserContext.newPage",
+                  "startTime": "2021-11-14T12:29:54.479Z",
+                  "duration": 324,
+                  "steps": []
+                }
+              ]
+            },
+            {
+              "title": "page.goto(https://juejin.cn/)",
+              "startTime": "2021-11-14T12:29:54.805Z",
+              "duration": 1814,
+              "snippet": "\u001b[0m \u001b[90m 3 |\u001b[39m test(\u001b[32m'my test'\u001b[39m\u001b[33m,\u001b[39m \u001b[36masync\u001b[39m ({ page }) \u001b[33m=>\u001b[39m {\u001b[0m\n\u001b[0m \u001b[90m 4 |\u001b[39m   \u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mgoto(\u001b[32m'https://juejin.cn/'\u001b[39m)\u001b[33m;\u001b[39m\u001b[0m\n\u001b[0m \u001b[90m   |\u001b[39m \u001b[31m\u001b[1m             ^\u001b[22m\u001b[39m\u001b[0m\n\u001b[0m \u001b[90m 5 |\u001b[39m\u001b[0m",
+              "steps": [],
+              "location": {
+                "file": "foo.test.js",
+                "line": 4,
+                "column": 14
+              }
+            },
+            {
+              "title": "page.screenshot",
+              "startTime": "2021-11-14T12:29:56.620Z",
+              "duration": 378,
+              "snippet": "\u001b[0m \u001b[90m 6 |\u001b[39m   \u001b[90m// Compare screenshot with a stored reference.\u001b[39m\u001b[0m\n\u001b[0m \u001b[90m 7 |\u001b[39m   expect(\u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mscreenshot())\u001b[33m.\u001b[39mtoMatchSnapshot(\u001b[32m'get-started.png'\u001b[39m)\u001b[33m;\u001b[39m\u001b[0m\n\u001b[0m \u001b[90m   |\u001b[39m \u001b[31m\u001b[1m                    ^\u001b[22m\u001b[39m\u001b[0m\n\u001b[0m \u001b[90m 8 |\u001b[39m })\u001b[33m;\u001b[39m\u001b[0m",
+              "steps": [],
+              "location": {
+                "file": "foo.test.js",
+                "line": 7,
+                "column": 21
+              }
+            },
+            {
+              "title": "expect.toMatchSnapshot",
+              "startTime": "2021-11-14T12:29:57.000Z",
+              "duration": 288,
+              "snippet": "\u001b[0m \u001b[90m 6 |\u001b[39m   \u001b[90m// Compare screenshot with a stored reference.\u001b[39m\u001b[0m\n\u001b[0m \u001b[90m 7 |\u001b[39m   expect(\u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mscreenshot())\u001b[33m.\u001b[39mtoMatchSnapshot(\u001b[32m'get-started.png'\u001b[39m)\u001b[33m;\u001b[39m\u001b[0m\n\u001b[0m \u001b[90m   |\u001b[39m \u001b[31m\u001b[1m                                  ^\u001b[22m\u001b[39m\u001b[0m\n\u001b[0m \u001b[90m 8 |\u001b[39m })\u001b[33m;\u001b[39m\u001b[0m",
+              "steps": [],
+              "location": {
+                "file": "foo.test.js",
+                "line": 7,
+                "column": 35
+              },
+              "error": "\u001b[31mSnapshot comparison failed:\u001b[39m\n\nExpected: \u001b[33mE:\\workspace\\frontEnd\\e2e\\playwright-test\\test-results\\foo-my-test\\get-started-expected.png\u001b[39m\nReceived: \u001b[33mE:\\workspace\\frontEnd\\e2e\\playwright-test\\test-results\\foo-my-test\\get-started-actual.png\u001b[39m\n    Diff: \u001b[33mE:\\workspace\\frontEnd\\e2e\\playwright-test\\test-results\\foo-my-test\\get-started-diff.png\u001b[39m"
+            },
+            {
+              "title": "After Hooks",
+              "startTime": "2021-11-14T12:29:57.288Z",
+              "duration": 43,
+              "steps": [
+                {
+                  "title": "browserContext.close",
+                  "startTime": "2021-11-14T12:29:57.289Z",
+                  "duration": 41,
+                  "steps": []
+                }
+              ]
+            }
+          ],
+          "error": "Error: \u001b[31mSnapshot comparison failed:\u001b[39m\n\nExpected: \u001b[33mE:\\workspace\\frontEnd\\e2e\\playwright-test\\test-results\\foo-my-test\\get-started-expected.png\u001b[39m\nReceived: \u001b[33mE:\\workspace\\frontEnd\\e2e\\playwright-test\\test-results\\foo-my-test\\get-started-actual.png\u001b[39m\n    Diff: \u001b[33mE:\\workspace\\frontEnd\\e2e\\playwright-test\\test-results\\foo-my-test\\get-started-diff.png\u001b[39m\n\n\u001b[0m \u001b[90m 5 |\u001b[39m\u001b[0m\n\u001b[0m \u001b[90m 6 |\u001b[39m   \u001b[90m// Compare screenshot with a stored reference.\u001b[39m\u001b[0m\n\u001b[0m\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 7 |\u001b[39m   expect(\u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mscreenshot())\u001b[33m.\u001b[39mtoMatchSnapshot(\u001b[32m'get-started.png'\u001b[39m)\u001b[33m;\u001b[39m\u001b[0m\n\u001b[0m \u001b[90m   |\u001b[39m                                   \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\u001b[0m\n\u001b[0m \u001b[90m 8 |\u001b[39m })\u001b[33m;\u001b[39m\u001b[0m\n\n\u001b[2m    at E:\\workspace\\frontEnd\\e2e\\playwright-test\\tests\\foo.test.js:7:35\u001b[22m\n\u001b[2m    at WorkerRunner._runTestWithBeforeHooks (E:\\workspace\\frontEnd\\e2e\\playwright-test\\node_modules\\@playwright\\test\\lib\\workerRunner.js:478:7)\u001b[22m",
+          "status": "failed",
+          "attachments": [
+            {
+              "name": "expected",
+              "contentType": "image/png",
+              "path": "data/b293a5b170ad7b2b406ae373578626f6ca4d690e.png"
+            },
+            {
+              "name": "actual",
+              "contentType": "image/png",
+              "path": "data/81692fe0c67812c20aec07b4b03ab95c5fd7e101.png"
+            },
+            {
+              "name": "diff",
+              "contentType": "image/png",
+              "path": "data/ccd0a32cc4416348e352302bb1cef7a7c0c65e7b.png"
+            }
+          ]
+        }
+      ],
+      "ok": false
+    }
+  ]
+}

@@ -1,0 +1,85 @@
+{
+  "fileId": "0db962c84a4003f317566108fc99778e59993ecf",
+  "fileName": "example.test.js",
+  "tests": [
+    {
+      "testId": "0db962c84a4003f317566108fc99778e59993ecf-f68a5e5ed84356d11a53e87f77e416d8bb01dbdd",
+      "title": "my test",
+      "projectName": "",
+      "location": {
+        "file": "example.test.js",
+        "line": 8,
+        "column": 3
+      },
+      "duration": 1252,
+      "outcome": "expected",
+      "path": [
+        "example.test.js:8",
+        "feature foo"
+      ],
+      "results": [
+        {
+          "duration": 1252,
+          "startTime": "2021-11-14T12:29:53.684Z",
+          "retry": 0,
+          "steps": [
+            {
+              "title": "Before Hooks",
+              "startTime": "2021-11-14T12:29:53.684Z",
+              "duration": 1194,
+              "steps": [
+                {
+                  "title": "browserContext.newPage",
+                  "startTime": "2021-11-14T12:29:53.881Z",
+                  "duration": 296,
+                  "steps": []
+                },
+                {
+                  "title": "page.goto(https://www.baidu.com/)",
+                  "startTime": "2021-11-14T12:29:54.180Z",
+                  "duration": 698,
+                  "snippet": "\u001b[0m \u001b[90m  4 |\u001b[39m   test\u001b[33m.\u001b[39mbeforeEach(\u001b[36masync\u001b[39m ({ page }) \u001b[33m=>\u001b[39m {\u001b[0m\n\u001b[0m \u001b[90m  5 |\u001b[39m     \u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mgoto(\u001b[32m\"https://www.baidu.com/\"\u001b[39m)\u001b[33m;\u001b[39m\u001b[0m\n\u001b[0m \u001b[90m    |\u001b[39m \u001b[31m\u001b[1m               ^\u001b[22m\u001b[39m\u001b[0m\n\u001b[0m \u001b[90m  6 |\u001b[39m   })\u001b[33m;\u001b[39m\u001b[0m",
+                  "steps": [],
+                  "location": {
+                    "file": "example.test.js",
+                    "line": 5,
+                    "column": 16
+                  }
+                }
+              ]
+            },
+            {
+              "title": "expect.toHaveURL",
+              "startTime": "2021-11-14T12:29:54.880Z",
+              "duration": 35,
+              "snippet": "\u001b[0m \u001b[90m  9 |\u001b[39m     \u001b[90m// Assertions use the expect API.\u001b[39m\u001b[0m\n\u001b[0m \u001b[90m 10 |\u001b[39m     \u001b[36mawait\u001b[39m expect(page)\u001b[33m.\u001b[39mtoHaveURL(\u001b[32m\"https://www.baidu.com/\"\u001b[39m)\u001b[33m;\u001b[39m\u001b[0m\n\u001b[0m \u001b[90m    |\u001b[39m \u001b[31m\u001b[1m                       ^\u001b[22m\u001b[39m\u001b[0m\n\u001b[0m \u001b[90m 11 |\u001b[39m   })\u001b[33m;\u001b[39m\u001b[0m",
+              "steps": [],
+              "location": {
+                "file": "example.test.js",
+                "line": 10,
+                "column": 24
+              }
+            },
+            {
+              "title": "After Hooks",
+              "startTime": "2021-11-14T12:29:54.915Z",
+              "duration": 21,
+              "steps": [
+                {
+                  "title": "browserContext.close",
+                  "startTime": "2021-11-14T12:29:54.916Z",
+                  "duration": 20,
+                  "steps": []
+                }
+              ]
+            }
+          ],
+          "error": "",
+          "status": "passed",
+          "attachments": []
+        }
+      ],
+      "ok": true
+    }
+  ]
+}
