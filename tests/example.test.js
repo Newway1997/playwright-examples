@@ -1,5 +1,5 @@
 const { expect } = require("@playwright/test");
-const { test } = require("../test.js");
+const { test } = require("../test-wrapper.js");
 
 test.describe("feature foo", () => {
     test.beforeEach(async ({ page }) => {

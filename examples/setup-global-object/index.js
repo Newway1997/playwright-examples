@@ -4,7 +4,7 @@ const path = require("path");
 (async function () {
     //桌面应用标记设为true，表示内嵌的chromium
     global.isDesktopApplication = true;
-    const browser = await chromium.connectOverCDP("http://localhost:8080");
+    const browser = await chromium.connectOverCDP("http://localhost:8088");
     const contexts = await browser.contexts();
     //打开新的tab
     const pages = await contexts[0].pages();
