@@ -13,10 +13,12 @@ const word = "你好";
   // Type into search box.
   await page.type("#inputOriginal", word);
 
-  await page.click("#transMachine");
+  await page.click(".transBtn", {
+    force: true
+  });
 
   // Wait for suggest overlay to appear and click "show all results".
-  const translateResultSelector = "#transTarget span";
+  const translateResultSelector = ".tgt span";
   await page.waitForSelector(translateResultSelector);
 
   // Extract the results from the page.

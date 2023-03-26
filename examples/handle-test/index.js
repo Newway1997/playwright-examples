@@ -1,4 +1,7 @@
 const { chromium } = require("playwright");
+/**
+ * 获取页面变量控制权案例
+ */
 (async () => {
   const browser = await chromium.launch();
   const page = await browser.newPage();

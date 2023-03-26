@@ -1,10 +1,12 @@
 const { chromium } = require("playwright");
 const path = require("path");
-
+/**
+ * 在初始化时设置全局对象
+ */
 (async function () {
     //桌面应用标记设为true，表示内嵌的chromium
     global.isDesktopApplication = true;
-    const browser = await chromium.connectOverCDP("http://localhost:8088");
+    const browser = await chromium.connectOverCDP("http://localhost:9222");
     const contexts = await browser.contexts();
     //打开新的tab
     const pages = await contexts[0].pages();

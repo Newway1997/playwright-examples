@@ -1,6 +1,9 @@
 const { chromium } = require("playwright");
 const USERNAME = "Test";
 const PASSWORD = "PASSWORD";
+/**
+ * 登录案例
+ */
 (async () => {
   const browser = await chromium.launch({
     headless: false,

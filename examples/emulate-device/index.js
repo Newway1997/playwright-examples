@@ -12,6 +12,6 @@ const iphone6 = devices["iPhone 6"];
   await page.goto("https://www.taobao.com/");
   await page.screenshot({ path: path.resolve(__dirname, "taobao.png") });
   const host = await page.evaluate(() => location.host);
-  console.log(host); // 'm.facebook.com'
+  console.log(host); // '*.m.facebook.com'
   browser.close();
 })();

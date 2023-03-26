@@ -2,7 +2,7 @@ const { chromium } = require("playwright");
 const fs = require("fs");
 const path = require("path");
 /**
- * 爬取新闻
+ * 通过执行注入的js代码爬取新闻
  */
 (async () => {
   const browser = await chromium.launch({

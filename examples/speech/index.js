@@ -3,7 +3,9 @@ const { chromium } = require("playwright");
 const path = require("path");
 const DEFAULT_TXT =
   "Hello there, my name is Puppeteer. I am controlling your browser.";
-
+/**
+ * 朗读案例
+ */
 (async () => {
   const browser = await chromium.launch({
     headless: false,

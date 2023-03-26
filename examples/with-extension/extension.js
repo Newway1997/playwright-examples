@@ -7,6 +7,7 @@ const fs = require("fs");
  * 启动时加载chrome插件案例
  */
 (async () => {
+  //需设置本地安装的插件文件路径
   const pathToExtension =
     "C:/Users/Newway/AppData/Local/Google/Chrome/User Data/Default/Extensions/nhdogjmejiglipccpnnnanhbledajbpd/5.3.4_1";
   const dir = await fs.promises.mkdtemp(path.join(tmpdir(), "user-data-dir-"));

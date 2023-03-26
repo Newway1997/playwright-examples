@@ -1,12 +1,14 @@
 const { chromium } = require("playwright");
-
+/**
+ * 获取性能指标
+ */
 (async () => {
   const browser = await chromium.launch();
   const page = await browser.newPage();
   const navigationPromise = page.waitForNavigation();
 
   await page.goto("http://www.baidu.com");
-  
+
   const performanceTiming = JSON.parse(
     await page.evaluate(() => JSON.stringify(window.performance.timing))
   );

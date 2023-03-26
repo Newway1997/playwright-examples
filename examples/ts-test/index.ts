@@ -4,7 +4,7 @@ import {chromium} from "playwright";
 import path from "path";
 
 /**
- * attach模式，在现有浏览器中进行测试的案例
+ * attach模式，在现有浏览器中进行测试的案例，需执行package.json中scripts ts-node
  */
 (async function () {
   //CDP协议连接进行调试，详情见https://juejin.cn/post/7012853971362512933

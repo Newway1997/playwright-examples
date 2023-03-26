@@ -1,5 +1,8 @@
+import { defineConfig } from '@playwright/test';
+import dotenv from 'dotenv';
+dotenv.config();
 console.log("read config");
-const config = {
+const config = defineConfig({
     globalSetup: require.resolve("./global-setup"),
     use: {
         channel: "chrome",
@@ -11,6 +14,6 @@ const config = {
     },
     testDir: "tests",
     retries: 1,
-};
+});
 
 module.exports = config;

@@ -6,12 +6,14 @@ const targetUrl = "http://www.maomijiaoyi.com";
 const axios = require("axios");
 /**
  * 图片下载案例
- * 
  */
-
 async function saveFile(fileUrl) {
+  const dir = path.resolve(__dirname, "./img");
+  if (!fs.existsSync(dir)) {
+    fs.mkdirSync(dir);
+  }
   let fileName = path.resolve(
-    "./img",
+    dir,
     new URL(fileUrl).pathname.split("/").slice(-1)[0]
   );
   if (!fs.existsSync(fileName)) {
