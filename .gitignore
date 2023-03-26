@@ -27,6 +27,8 @@ examples/download-images/img
 examples/**/*.png
 examples/**/*.jpg
 examples/**/*.gif
+test-results
+tests/snapshot.test.js-snapshots
 *.zip
 *.webm
 *.pdf

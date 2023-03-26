@@ -1,7 +1,8 @@
 const base = require("@playwright/test");
 const { chromium } = require("playwright");
-
+//封装test
 exports.test = base.test.extend({
+    //封装page对象，通过cdp attach chrome获取page对象
     page: async ({}, use) => {
         //桌面应用标记设为true，表示内嵌的chromium
         global.isDesktopApplication = true;

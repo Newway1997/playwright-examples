@@ -1,8 +1,8 @@
-const { test, expect } = require('@playwright/test');
+const { test, expect } = require("@playwright/test");
 
-test('my test', async ({ page }) => {
-  await page.goto('https://juejin.cn/');
+test("snapshot", async ({ page }) => {
+    await page.goto("https://www.baidu.com/");
 
-  // Compare screenshot with a stored reference.
-  expect(await page.screenshot()).toMatchSnapshot('get-started.png');
+    // Compare screenshot with a stored reference.
+    expect(await page.screenshot()).toMatchSnapshot("get-started.png");
 });
