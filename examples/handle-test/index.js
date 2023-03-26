@@ -29,7 +29,7 @@ const { chromium } = require("playwright");
     newElement: 2,
   });
 
-  console.log(await myArrayHandle.jsonValue())
+  console.log(await myArrayHandle.jsonValue());
   // Release the object when it's no longer needed.
   myArrayHandle.dispose();
 

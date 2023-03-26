@@ -1,6 +1,6 @@
-import {Browser} from "@playwright/test";
+import { Browser } from "@playwright/test";
 
-import {chromium} from "playwright";
+import { chromium } from "playwright";
 import path from "path";
 
 /**
@@ -13,7 +13,7 @@ import path from "path";
   const page = await getPage(browser);
   //打开新的tab
   await page.goto("http://www.baidu.com");
-  await page.screenshot({path: path.resolve(__dirname, "screenshot.png")});
+  await page.screenshot({ path: path.resolve(__dirname, "screenshot.png") });
   await browser.close();
 })();
 

@@ -35,5 +35,5 @@ const { chromium } = require("playwright");
   });
 
   await page.pause();
-//   await browser.close();
+  //   await browser.close();
 })();

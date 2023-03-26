@@ -23,10 +23,10 @@ const fs = require("fs");
   const page = await browserContext.newPage();
   await page.goto("https://www.google.com/");
   // Press Tab
-  await page.press('[aria-label="搜索"]', 'Tab');
+  await page.press('[aria-label="搜索"]', "Tab");
   // Press Tab
-  await page.press('[aria-label="按语音搜索"]', 'Tab');
+  await page.press('[aria-label="按语音搜索"]', "Tab");
   // Press Tab
-  await page.press(':nth-match(:text("Google 搜索"), 2)', 'Tab');
+  await page.press(':nth-match(:text("Google 搜索"), 2)', "Tab");
   await page.pause();
 })();

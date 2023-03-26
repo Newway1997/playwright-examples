@@ -14,7 +14,7 @@ const word = "你好";
   await page.type("#inputOriginal", word);
 
   await page.click(".transBtn", {
-    force: true
+    force: true,
   });
 
   // Wait for suggest overlay to appear and click "show all results".

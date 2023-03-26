@@ -1,4 +1,3 @@
-
 module.exports = async function (config) {
-    console.log('global-setup')
+  console.log("global-setup");
 };
