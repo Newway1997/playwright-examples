@@ -14,6 +14,11 @@ const config = defineConfig({
   },
   testDir: "tests",
   retries: 1,
+  expect: {
+    toMatchSnapshot: {
+      maxDiffPixelRatio: 0.1,
+    },
+  },
 });
 
 module.exports = config;

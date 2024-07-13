@@ -1,0 +1,13 @@
+diff --git a/node_modules/playwright-core/lib/server/chromium/crBrowser.js b/node_modules/playwright-core/lib/server/chromium/crBrowser.js
+index ceacd1d..76d29b0 100644
+--- a/node_modules/playwright-core/lib/server/chromium/crBrowser.js
++++ b/node_modules/playwright-core/lib/server/chromium/crBrowser.js
+@@ -298,7 +298,7 @@ class CRBrowserContext extends _browserContext.BrowserContext {
+   async _initialize() {
+     (0, _utils.assert)(!Array.from(this._browser._crPages.values()).some(page => page._browserContext === this));
+     const promises = [super._initialize()];
+-    if (this._browser.options.name !== 'electron' && this._browser.options.name !== 'clank' && this._options.acceptDownloads !== 'internal-browser-default') {
++    if (this._browser.options.name !== 'electron' && this._browser.options.name !== 'clank' && this._options.acceptDownloads !== 'internal-browser-default'  && !global.isDesktopApplication) {
+       promises.push(this._browser._session.send('Browser.setDownloadBehavior', {
+         behavior: this._options.acceptDownloads === 'accept' ? 'allowAndName' : 'deny',
+         browserContextId: this._browserContextId,
